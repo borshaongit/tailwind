@@ -3,11 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Clock</title>
+    <title>First Tailwind Project</title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 </head>
-<body>
+<body class="bg-gray-100 text-gray-800">
+    <!-- ==== step:1 ==== -->
+     <nav class="bg-white shadow-md flex items-center justify-between">
+        <div class="flex items-center justify-between w-full">
+            <div class="flex items-center space-x-2 ">
+                <img src="/logo.svg" alt="logo" class="h-10 w-10 w-auto">
+                <h1 class="text-3xl font-bold">My site</h1>
+
+            </div>
+            <ul class="flex space-x-4">
+                <li><a href="#" class="hover:text-blue-500">Home</a></li>
+                <li><a href="#" class="hover:text-blue-500">About</a></li>
+                <li><a href="#" class="hover:text-blue-500">Contact</a></li>
+            </ul>
+        </div>
+     </nav>
     
-    <h1 id="Clock">Digital Live Clock</h1>
-    <script src="script.js"></script>
+     <!-- === step:2 Main Content === -->
+      <section class="bg-blue-800 p-8 text-white">
+        <div class="flex justify-between items-center">
+            <div class="max-w-md space-y-4">
+                <h2 class="text-3xl font-semibold" >Welcome to My site</h2>
+                <p>This is a simple paragraph for demonstration purpose.</p>
+                <div>
+                    <button class="bg-white text-blue-800 hover:bg-gray-200 py-2 px-4 rounded">Get started</button>
+
+                </div>
+            </div>
+            <img src="https://picsum.photos/seed/picsum/600/400" alt="Demo Image" class="rounded-3xl object-cover">
+        </div>
+      </section>
+
+      <!-- ==== step: 3 card ===== -->
+       <section class="bg-white p-8 text-gray-800">
+        <h3 class=" text-2xl font-semibold text-center">Our services</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+            <div class="max-w-md space-y-4">
+                <div class="bg-gray-100 p-4 rounded-lg shadow-md text-center space-y-2">
+                    <img src="https://picsum.photos/seed/picsum/400/300" alt="Service Image" class="rounded-lg">
+                    <h4 class="text-xl font-medium">Web Design</h4>
+                    <p class="text-gray-600 h-12 overflow-hidden">Our web development services help you creat a stunninge your audience and drive</p> 
+                    <button class="bg-blue-500 text-white hover:bg-blue-600 py-2 px-4 rounded cursor-pointer">Learn More</button>
+                </div>
+            </div>
+                <div class="max-w-md space-y-4">
+                <div class="bg-gray-100 p-4 rounded-lg text-center space-y-2">
+                    <img src="https://picsum.photos/seed/picsum/400/300" alt="Service Image" class="rounded-lg">
+                    <h4 class="text-xl font-medium">web development</h4>
+                    <p class="text-gray-600 h-12 overflow-hidden"> web development services help you build a robust and scalable online presence that meet your business on top level</p>
+                    <button class="bg-blue-500 text-white hover:bg-blue-600 py-2 px-4 rounded cursor-pointer">Learn More</button>
+                </div>
+            </div>
+
+            <div class="max-w-md space-y-4">
+                <div class="bg-gray-100 p-4 rounded-lg shadow-md text-center space-y-2">
+                <img src="https://picsum.photos/seed/picsum/400/300" alt="service Image" class="rounded-lg">
+                <h4 class="text-xl font-medium">Support</h4>
+                <p class="text-gray-600 h-12 overflow-hidden">Our support services ensure your website runs smoothly and effecienctly.</p>
+                <button class="bg-blue-500 text-white hover:bg-blue-600 py-2 px-4 rounded cursor-pointer">Learn More</button>
+            </div>
+            </div>
+        </div>
+       </section>
+       <!-- ==== step:4 Footer ==== -->
+        <footer class="bg-gray-800 text-white p-4 text-center">
+            <p>&copy; 2026 Mysite. All right reserved.</p>
+        </footer>
 </body>
-</html>
+</html
+
